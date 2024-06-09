@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>WebToon</title>
+    <style>
+        .pagination {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            list-style: none;
+        }
+        .page-item {
+            margin: 0 5px;
+        }
+        .page-link {
+            display: block;
+            padding: 8px 16px;
+            text-decoration: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .page-link:hover {
+            background-color: #0056b3;
+        }
+        .page-item.disabled .page-link {
+            background-color: #e9ecef;
+            color: #6c757d;
+            pointer-events: none;
+        }
+        .page-item.active .page-link {
+            background-color: #0056b3;
+            color: white;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+   <section class="desktop">
+    <header>
+        <nav class="header-menu">
+            <div class="header-menu__left">
+                <h1 class="header-logo"><img src="./images/logo.svg" alt="logo"></h1>
+                <ul class="header-list">
+                    <li><a href="original.html">HOME</a></li>
+                    <li><a href="genre.html">GENRE</a></li>
+                    <li><a href="popular.html">POPULAR</a></li>
+                    <li><a href="https://webtoon1.my.canva.site/">ABOUT US</a></li>
+                </ul>
+            </div>
+            <div class="header-menu__right">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+               <a href="login.html" class="header-login">Login</a>
+            </div>
+        </nav>
+        <div class="banner">
+            <img src="./images/banner.png" alt="banner" class="banner-img">
+            <div class="banner-section">
+                <img src="./images/banner-sec-1.png" alt="banner-sec-1" class="banner-sec-1">
+                <img src="./images/banner-sec-2.png" alt="banner-sec-2" class="banner-sec-2">
+            </div>
+        </div>
+    </header>
+    <div class="week">
+        <ul class="week-list">
+            <li>MON</li>
+            <li>TUE</li>
+            <li>WED</li>
+            <li>THU</li>
+            <li>FRI</li>
+            <li>SAT</li>
+            <li class="week-active">SUN</li>
+        </ul>
+    </div>         
+    <div style="" class="homepage_suggest">
+        <h2>
+            <p class="text_list_hot" style="text-align:center; " >
+                <i class="fa fa-star" ></i> NEW
+            </p>
+        </h2>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active" style="color: #d4d4d4 height:; width:1%;"></li>
+            </ul>
+            
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+
+                <div class="container-fluid">   
+                    <div class="carousel-item active">
+
+                    <div class="row">
+                        <div class="col-sm-2 ">
+                            <img src="./images/nguyenton.jpg" >
+                            <h3 style="text-align:center;">Nguyên tôn</h3>
+                        </div>
+                        <div class="col-sm-2">
+                            <img src="./images/voluyendinhphong.jpg">
+                            <h3 style="text-align:center;">Võ luyện đỉnh phong</h3>
+                        </div>
+                        <div class="col-sm-2">
+                            <img src="./images/vuathangcap.jpg">
+                            <h3 style="text-align:center;">Vua thăng cấp</h3>
+                        </div>
+                        <div class="col-sm-2">
+                            <img src="./images/hiepkhachgiangho.jpg">
+                            <h3 style="text-align:center;">Hiệp khách giang hồ</h3>
+                        </div>
+                        <div class="col-sm-2">
+                            <img src="./images/hocvienanhhung.jpg">
+                            <h3 style="text-align:center;">Học viện anh hùng</h3>
+                        </div>
+                        <div class="col-sm-2">
+                            <img src="./images/dauphathuongkhung.jpg">
+                            <h3 style="text-align:center;">Đấu phá thương khung</h3>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <img src="./images/remonster.jpg">
+                                <h3 style="text-align:center;">Re:Monster</h3>
+                            </div>
+                
+                            <div class="col-sm-2">
+                                <img src="./images/tenla.jpg">
+                                <h3 style="text-align:center;">Murabito Desu Ga Nani Ka?</h3>
+                            </div>
+                            <div class="col-sm-2">
+                                <img src="./images/phongyeuvandao.jpg">
+                                <h3 style="text-align:center;">Hiệp khách giang hồ</h3>
+                            </div>
+                            <div class="col-sm-2">
+                                <img src="./images/makechuyen2.jpg">
+                                <h3 style="text-align:center;">Ma kể chuyện 2</h3>
+                            </div>
+                            <div class="col-sm-2">
+                                <img src="./images/congnuongsu.jpg">
+                                <h3 style="text-align:center;">Công nương sư</h3>
+                            </div>
+                            <div class="col-sm-2">
+                                <img src="./images/anhhungtrolai.jpg">
+                                <h3 style="text-align:center;">Anh hùng trở lại</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <img src="./images/thanhkiembaothu.jpg">
+                                <h3 style="text-align:center;">Thanh kiếm báo thù</h3>
+                            </div>
+                            <div class="col-sm-2">
+                                <img src="./images/chieu-hon-gia-sieu-pham.jpg">
+                                <h3 style="text-align:center;">Chiêu hồn giả siêu phàm</h3>
+                            </div>
+                            <div class="col-sm-2">
+                                <img src="./images/mao-hiem-gia-cuoi-cung.jpg">
+                                <h3 style="text-align:center;">Mạo hiểm giả cuối cùng</h3>
+                            </div>
+                            <div class="col-sm-2">
+                                <img src="./images/yeu-than-ky.jpg">
+                                <h3 style="text-align:center;">Yêu thần ký</h3>
+                            </div>
+                            <div class="col-sm-2">
+                                <img src="./images/toi-da-roi-khoi-to-doi-anh-hung.jpg">
+                                <h3 style="text-align:center;">Tôi đã rời khỏi tổ đội anh hùng</h3>
+                            </div>
+                            <div class="col-sm-2">
+                                <img src="./images/bi-mat-cua-co-vo-gyaru.jpg">
+                                <h3 style="text-align:center;">Bí mật của cô vợ Gyaru</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+    </div>
+        <main class="main-content">
+           
+            <div class="top" class="sto">
+                <div class="top-item item item-41">
+                    <div class="section-head">
+                        
+                        <p>12.1M</p>
+                        <p class="scan">Up</p>
+                    </div>
+                    <div class="section-content">
+                        <div class="content-head">
+                            <h3>Công Nương Su
+                            </h3>
+                            <p>đang cập nhật</p>
+                        </div>
+                        <p class="content">
+                            Vallia đã phải sống cuộc sống buồn bã và cô độc khi được sinh ra trong một gia đình bị phá sản.
+                        </p>
+                    </div>
+                </div>
+                <div class="top-item item item-42">
+                    <div class="section-head">
+                        
+                        <p>12.1M</p>
+                        <p class="scan">Up</p>
+                    </div>
+                    <div class="section-content">
+                        <div class="content-head">
+                            <h3>Sakamoto Days
+                            </h3>
+                            <p>Suzuki Yuuto
+                            </p>
+                        </div>
+                        <p class="content"> Đọc từ đầu
+                            Theo dõi
+                            Thích
+                            Giới thiệu
+                           Taro Sakamoto là sát thủ huyền thoại , được các nhân vật phản diện khiếp sợ và các sát thủ ngưỡng mộ. Nhưng một ngày ... anh đã yêu! Giải nghệ, kết hôn.
+                        </p>
+                    </div>
+                </div>
+                <div class="top-item item item-43">
+                    <div class="section-head">
+                        <p>12.1M</p>
+                        <p class="scan">Up</p>
+                    </div>
+                    <div class="section-content">
+                        <div class="content-head">
+                            <h3>Madame Petit
+                            </h3>
+                            <p>đang cập nhật</p>
+                        </div>
+                        <p class="content">
+                            Vào những năm 1920, Mariko, 16 tuổi, cưới một người đàn ông 30 tuổi.
+                        </p>
+                    </div>
+                </div>
+                <div class="top-item item item-44">
+                    <div class="section-head">
+                        <p>12.1M</p>
+                        <p class="scan">Up</p>
+                    </div>
+                    <div class="section-content">
+                        <div class="content-head">
+                            <h3>Bố Tôi Là Đặc Vụ
+                            </h3>
+                            <p>đang cập nhật</p>
+                        </div>
+                        <p class="content">
+                            Ngài Kim - một nhân viên văn phòng tệ hại, người luôn bị sếp la mắng một cách thậm tệ, nhưng dưới vỏ bọc đó lại là một đặc vụ ưu tú.
+                        </p>
+                    </div>
+                </div>
+                <div class="top-item item item-45">
+                    <div class="section-head">
+                        <p>12.1M</p>
+                        <p class="scan">Up</p>
+                    </div>
+                    <div class="section-content">
+                        <div class="content-head">
+                            <h3>Đế Vương Hồi Quy
+                            </h3>
+                            <p>đang cập nhật</p>
+                        </div>
+                        <p class="content">[Một tác phẩm được thực hiện bởi Redice Studio - Studio đã làm bộ  [Solo Leveling], [Thiết Huyết Cẩu Kiếm Sĩ Báo Thù]
+
+
+                        </p>
+                    </div>
+                </div>
+                <div class="top-item item item-46">
+                    <div class="section-head">
+                        <p>12.1M</p>
+                        <p class="scan">Up</p>
+                    </div>
+                    <div class="section-content">
+                        <div class="content-head">
+                            <h3>Quái Lực Loạn Thần
+                            </h3>
+                            <p>đang cập nhật</p>
+                        </div>
+                        <p class="content">
+                            Truyện tranh Quái Lực Loạn Thần được cập nhật nhanh và đầy đủ nhất tại TruyenQQ.
+                        </p>
+                    </div>
+                </div>
+                <div class="top-item item item-47">
+                    <div class="section-head">
+                        <p>12.1M</p>
+                        <p class="scan">Up</p>
+                    </div>
+                    <div class="section-content">
+                        <div class="content-head">
+                            <h3>Vĩ Linh Kiếm Tiên
+                            </h3>
+                            <p>đang cập nhật</p>
+                        </div>
+                        <p class="content">
+                            Truyện tranh Vĩ Linh Kiếm Tiên được cập nhật nhanh và đầy đủ nhất tại TruyenQQ.
+                        </p>
+                    </div>
+                </div>
+                <div class="top-item item item-48">
+                    <div class="section-head">
+                        <p>12.1M</p>
+                        <p class="scan">Up</p>
+                    </div>
+                    <div class="section-content">
+                        <div class="content-head">
+                            <h3>Kẻ Bất Bại
+                            </h3>
+                            <p>đang cập nhật</p>
+                        </div>
+                        <p class="content">
+                            Truyện tranh Kẻ Bất Bại được cập nhật nhanh và đầy đủ nhất tại TruyenQQ. 
+                        </p>
+                    </div>
+                </div>
+                <div class="top-item item item-49">
+                    <div class="section-head">
+                        <p>12.1M</p>
+                        <p class="scan">Up</p>
+                    </div>
+                    <div class="section-content">
+                        <div class="content-head">
+                            <h3>Hồi Quy Giả Về Hưu
+                            </h3>
+                            <p>đang cập nhật</p>
+                        </div>
+                        <p class="content">
+                            Sau khi Cánh cổng đầu tiên được mở vào năm 2018, Lim Dae-In đã sống sót được 20 năm trên Trái đất trong khi được kết nối với các chiều không gian khác.
+                        </p>
+                    </div>
+                </div>
+                <div class="top-item item item-50">
+                    <div class="section-head">
+                        <p>12.1M</p>
+                        <p class="scan">Up</p>
+                    </div>
+                    <div class="section-content">
+                        <div class="content-head">
+                            <h3>Chuyển Sinh Thành Tiêu Sư
+                            </h3>
+                            <p>đang cập nhật</p>
+                        </div>
+                        <p class="content">
+                            Truyện tranh Chuyển Sinh Thành Tiêu Sư được cập nhật nhanh và đầy đủ nhất tại TruyenQQ.
+                        </p>
+                    </div>
+                </div>
+                <div class="top-item item item-51">
+                    <div class="section-head">
+                        <p>12.1M</p>
+                        <p class="scan">Up</p>
+                    </div>
+                    <div class="section-content">
+                        <div class="content-head">
+                            <h3>Tôi Mạnh Hơn Anh Hùng
+                            </h3>
+                            <p>đang cập nhật</p>
+                        </div>
+                        <p class="content">
+                            Truyện tranh Tôi Mạnh Hơn Anh Hùng được cập nhật nhanh và đầy đủ nhất tại TruyenQQ.
+                        </p>
+                    </div>
+                </div>
+                <div class="top-item item item-52">
+                    <div class="section-head">
+                        <p>12.1M</p>
+                        <p class="scan">Up</p>
+                    </div>
+                    <div class="section-content">
+                        <div class="content-head">
+                            <h3>Kiếm Thánh Trọng Sinh
+                            </h3>
+                            <p>đang cập nhật</p>
+                        </div>
+                        <p class="content">
+                            Truyện tranh Kiếm Thánh Trọng Sinh được cập nhật nhanh và đầy đủ nhất tại TruyenQQ. 
+                        </p>
+                    </div>
+                </div>
+                <div class="top-item item item-53">
+                    <div class="section-head">
+                        <p>12.1M</p>
+                        <p class="scan">Up</p>
+                    </div>
+                    <div class="section-content">
+                        <div class="content-head">
+                            <h3>Thực Long Ma Pháp Sư
+                            </h3>
+                            <p>đang cập nhật</p>
+                        </div>
+                        <p class="content">
+                            Truyện tranh Thực Long Ma Pháp Sư được cập nhật nhanh và đầy đủ nhất tại TruyenQQ.
+                        </p>
+                    </div>
+                </div>
+                <div class="top-item item item-54">
+                    <div class="section-head">
+                        <p>12.1M</p>
+                        <p class="scan">Up</p>
+                    </div>
+                    <div class="section-content">
+                        <div class="content-head">
+                            <h3>Bạo Lực Vương
+                            </h3>
+                            <p>đang cập nhật</p>
+                        </div>
+                        <p class="content">
+                            Truyện tranh Bạo Lực Vương được cập nhật nhanh và đầy đủ nhất tại TruyenQQ.
+                        </p>
+                    </div>
+                </div>
+                <div class="top-item item item-55">
+                    <div class="section-head">
+                        <p>12.1M</p>
+                        <p class="scan">Up</p>
+                    </div>
+                    <div class="section-content">
+                        <div class="content-head">
+                            <h3>Cảm Kiếm Tuyệt Đối
+                            </h3>
+                            <p>đang cập nhật</p>
+                        </div>
+                        <p class="content">
+                            Nam chính So Woon Hwi bị đã bị Bắt cóc bởi huyết giáo và sống như một gián điệp tầng chót.
+                        </p>
+                    </div>
+                </div>
+                <div class="top-item item item-56">
+                    <div class="section-head">
+                        <p>12.1M</p>
+                        <p class="scan">Up</p>
+                    </div>
+                    <div class="section-content">
+                        <div class="content-head">
+                            <h3>Sự Quyến Rũ Của 2.5D
+                            </h3>
+                            <p>đang cập nhật</p>
+                        </div>
+                        <p class="content">Cosplay , gái cute con mai que
+
+
+                        </p>
+                    </div>
+                </div>
+                <div class="top-item item item-57">
+                    <div class="section-head">
+                        <p>12.1M</p>
+                        <p class="scan">Up</p>
+                    </div>
+                    <div class="section-content">
+                        <div class="content-head">
+                            <h3>Isshou Senkin
+                            </h3>
+                            <p>đang cập nhật</p>
+                        </div>
+                        <p class="content">
+                            Một đấu sĩ thất nghiệp, một yakuza và một ả cớm bẩn cùng nhau tổ chức một đấu trường ngầm giành riêng cho phụ nữ với giấc mơ nhanh chóng làm giàu. 
+                        </p>
+                    </div>
+                </div>
+                <div class="top-item item item-58">
+                    <div class="section-head">
+                        <p>12.1M</p>
+                        <p class="scan">Up</p>
+                    </div>
+                    <div class="section-content">
+                        <div class="content-head">
+                            <h3>Shinsou No Raputa
+                            </h3>
+                            <p>đang cập nhật</p>
+                        </div>
+                        <p class="content">
+                            Raputa, một AI được phát triển trong bí mật, bắt đầu tương tác với cậu bé người Nhật tên Kei thông qua một trò chơi điện tử. 
+                        </p>
+                    </div>
+                </div>
+                <div class="top-item item item-59">
+                    <div class="section-head">
+                        <p>12.1M</p>
+                        <p class="scan">Up</p>
+                    </div>
+                    <div class="section-content">
+                        <div class="content-head">
+                            <h3>Xa Đao Nhân
+                            </h3>
+                            <p>đang cập nhật</p>
+                        </div>
+                        <p class="content">
+                            Mỗi khi loạn thế tai niên, người cầm đao sẽ xuất hiện, đem thanh đao thích hợp cho người hữu duyên, không thu phân văn, chỉ thích lưu lại vài câu nói.
+                        </p>
+                    </div>
+                </div>
+                <div class="top-item item item-60">
+                    <div class="section-head">
+                        <p>12.1M</p>
+                        <p class="scan">Up</p>
+                    </div>
+                    <div class="section-content">
+                        <div class="content-head">
+                            <h3>Công Tử Biệt Tú!
+                            </h3>
+                            <p>đang cập nhật</p>
+                        </div>
+                        <p class="content">
+                            Hải Vương Lâm Tú xuyên không đến thế giới dị thuật, chỉ cần cùng người khác tiếp xúc thân thể là có thể phục chế năng lực của họ? 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <ul class="pagination">
+                <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">Previous</a></li>
+                <li class="page-item active"><a class="page-link" href="original.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="page2.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="page3.html">3</a></li>
+                <li class="page-item"><a class="page-link" href="page3.html">Next</a></li>
+            </ul>
+            
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const url = window.location.pathname;
+                    const currentPage = url.substring(url.lastIndexOf('/') + 1);
+            
+                    const prevLink = document.querySelector('.page-item.disabled .page-link');
+                    const nextLink = document.querySelector('.pagination .page-item:last-child .page-link');
+            
+                    switch(currentPage) {
+                        case 'original.html':
+                            prevLink.parentElement.classList.add('disabled');
+                            nextLink.href = '/page2.html';
+                            break;
+                        case 'page2.html':
+                            document.querySelector('.pagination .page-item:nth-child(1) .page-link').href = '/original.html';
+                            nextLink.href = '/page3.html';
+                            break;
+                        case 'page3.html':
+                            document.querySelector('.pagination .page-item:nth-child(1) .page-link').href = '/page2.html';
+                            nextLink.parentElement.classList.add('disabled');
+                            break;
+                        default:
+                            prevLink.href = '#';
+                            nextLink.href = '#';
+                    }
+            
+                    document.querySelectorAll('.page-item').forEach(item => {
+                        if (item.querySelector('.page-link').getAttribute('href').includes(currentPage)) {
+                            item.classList.add('active');
+                        }
+                    });
+                });
+            </script>
+        </main>
+        
+        <footer class="footer">
+            <div class="footer-app">
+                <h2>Download WebToon now!</h2>
+                <div class="app-flex">
+                    <img src="./images/gg-play.png" alt="google-play">
+                    <img src="./images/appstore.png" alt="app-store">
+                </div>
+            </div>
+            <div class="footer-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                    <path fill="#FFF"
+                        d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20">
+                    <path fill="#FFF"
+                        d="M10.333 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.976 1.409 4.1 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.058 4.042-.124 2.687-1.386 3.975-4.099 4.099-1.055.048-1.37.058-4.042.058-2.67 0-2.986-.01-4.04-.058-2.717-.124-3.976-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058zm0-1.802C7.618 0 7.278.012 6.211.06 2.579.227.56 2.242.394 5.877.345 6.944.334 7.284.334 10s.011 3.057.06 4.123c.166 3.632 2.181 5.65 5.816 5.817 1.068.048 1.408.06 4.123.06 2.716 0 3.057-.012 4.124-.06 3.628-.167 5.651-2.182 5.816-5.817.049-1.066.06-1.407.06-4.123s-.011-3.056-.06-4.122C20.11 2.249 18.093.228 14.458.06 13.39.01 13.049 0 10.333 0zm0 4.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm5.339-9.87a1.2 1.2 0 10-.001 2.4 1.2 1.2 0 000-2.4z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                    <path fill="#FFF"
+                        d="M10 0C4.478 0 0 4.477 0 10c0 4.237 2.636 7.855 6.356 9.312-.088-.791-.167-2.005.035-2.868.182-.78 1.172-4.97 1.172-4.97s-.299-.6-.299-1.486c0-1.39.806-2.428 1.81-2.428.852 0 1.264.64 1.264 1.408 0 .858-.545 2.14-.828 3.33-.236.995.5 1.807 1.48 1.807 1.778 0 3.144-1.874 3.144-4.58 0-2.393-1.72-4.068-4.177-4.068-2.845 0-4.515 2.135-4.515 4.34 0 .859.331 1.781.745 2.281a.3.3 0 01.069.288l-.278 1.133c-.044.183-.145.223-.335.134-1.249-.581-2.03-2.407-2.03-3.874 0-3.154 2.292-6.052 6.608-6.052 3.469 0 6.165 2.473 6.165 5.776 0 3.447-2.173 6.22-5.19 6.22-1.013 0-1.965-.525-2.291-1.148l-.623 2.378c-.226.869-.835 1.958-1.244 2.621.937.29 1.931.446 2.962.446 5.522 0 10-4.477 10-10S15.522 0 10 0z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18">
+                    <path fill="#FFF"
+                        d="M20.667 2.797a8.192 8.192 0 01-2.357.646 4.11 4.11 0 001.804-2.27 8.22 8.22 0 01-2.606.996A4.096 4.096 0 0014.513.873c-2.649 0-4.595 2.472-3.997 5.038a11.648 11.648 0 01-8.457-4.287 4.109 4.109 0 001.27 5.478A4.086 4.086 0 011.47 6.59c-.045 1.901 1.317 3.68 3.29 4.075a4.113 4.113 0 01-1.853.07 4.106 4.106 0 003.834 2.85 8.25 8.25 0 01-6.075 1.7 11.616 11.616 0 006.29 1.843c7.618 0 11.922-6.434 11.662-12.205a8.354 8.354 0 002.048-2.124z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20">
+                    <path fill="#FFF"
+                        d="M10.333 0c-5.522 0-10 4.478-10 10 0 5.523 4.478 10 10 10 5.523 0 10-4.477 10-10 0-5.522-4.477-10-10-10zm3.701 14.077c-1.752.12-5.653.12-7.402 0C4.735 13.947 4.514 13.018 4.5 10c.014-3.024.237-3.947 2.132-4.077 1.749-.12 5.651-.12 7.402 0 1.898.13 2.118 1.059 2.133 4.077-.015 3.024-.238 3.947-2.133 4.077zM8.667 8.048l4.097 1.949-4.097 1.955V8.048z" />
+                </svg>
+            </div>
+            <ul class="footer-list">
+                <li>Terms of Use</li>
+                <li>Feedback</li>
+                <li>Help</li>
+                <li>Terms</li>
+                <li>Privacy</li>
+                <li>Contact</li>
+            </ul>
+        </footer>
+   </section>
+</body>
+</html>

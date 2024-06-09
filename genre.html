@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>WebToon</title>
+</head>
+<body>
+   <section class="desktop">
+    <header>
+        <nav class="header-menu">
+            <div class="header-menu__left">
+                <h1 class="header-logo"><img src="./images/logo.svg" alt="logo"></h1>
+                <ul class="header-list">
+                    <li><a href="original.html">HOME</a></li>
+                    <li><a href="genre.html">GENRE</a></li>
+                    <li><a href="popular.html">POPULAR</a></li>
+                    <li><a href="https://webtoon1.my.canva.site/">ABOUT US</a></li>
+                </ul>
+            </div>
+            <div class="header-menu__right">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+               <a href="login.html" class="header-login">Login</a>
+            </div>
+        </nav>
+        <div class="banner">
+            <img src="./images/banner.png" alt="banner" class="banner-img">
+            <div class="banner-section">
+                <img src="./images/banner-sec-1.png" alt="banner-sec-1" class="banner-sec-1">
+                <img src="./images/banner-sec-2.png" alt="banner-sec-2" class="banner-sec-2">
+            </div>
+        </div>
+    </header>
+    <div class="week">
+        <ul class="week-list">
+            <li>MON</li>
+            <li>TUE</li>
+            <li>WED</li>
+            <li>THU</li>
+            <li>FRI</li>
+            <li>SAT</li>
+            <li class="week-active">SUN</li>
+        </ul>
+    </div>
+        <div>
+            <div class="genres">
+                <h2 class="headline">Genres</h2>
+                <!-- horor -->
+                <div class="genres-list">
+                    <div class="genres-head item  horror">
+                        <h3>Horror</h3>
+                        <p> A story in which the focus is on creating a feeling of fear.</p>
+                    </div>
+                    <div class="genres-item item item-1">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">UP</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Ma Kể Chuyện 2
+                                </h3>
+                                <p>đang cập nhật</p>
+                            </div>
+                            <p class="content">Bạn nghĩ những câu chuyện ma quỷ là đáng sợ lắm rồi sao? Thử lắng nghe những câu chuyện được kể bởi những hồn ma xem.
+
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="genres-item item item-2">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">UP</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Caramal Kỳ Quái
+                                </h3>
+                                <p>đang cập nhật</p>
+                            </div>
+                            <p class="content">
+                                Truyện tranh Caramal Kỳ Quái được cập nhật nhanh và đầy đủ nhất tại TruyenQQ. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="genres-item item item-3">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">END</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Killy Valentino
+                                </h3>
+                                <p>đang cập nhật</p>
+                            </div>
+                            <p class="content">
+                                Những mẩu chuyện nhỏ về một chú búp bê vui vẻ, lấy giết chóc làm trò tiêu khiển cho thần linh. Cậu còn có một người bạn là Ma cà rồng, luôn mang lại niềm vui cho mọi người. Tên của cậu là Killy!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="genres-item item item-4">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">END</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Thực Quỷ
+                                </h3>
+                                <p>đang cập nhật</p>
+                            </div>
+                            <p class="content">
+                                Meok Gwi-Sa' là một Thợ săn quái vật để bảo vệ thế giới loài người. Sau khi thả quỷ địa ngục, anh ta mất đi sức mạnh của mình.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="genres-item item item-5">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">END</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Lá Phiếu Tử Hình
+                                </h3>
+                                <p>đang cập nhật</p>
+                            </div>
+                            <p class="content">
+                                Truyện tranh Lá Phiếu Tử Hình được cập nhật nhanh và đầy đủ nhất tại TruyenQQ. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- action -->
+                <div class="genres-list">
+                    <div class="genres-head item action">
+                        <h3>Action</h3>
+                        <p> Series that feature action, punching, or the use of a variety of weapons or gangs of gypsy criminals are often referred to as Action.</p>
+                    </div>
+                    <div class="genres-item item item-6">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">UP</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Kiếm Thánh Trọng Sinh
+                                </h3>
+                                <p>đang cập nhật</p>
+                            </div>
+                            <p class="content">
+                                Truyện tranh Kiếm Thánh Trọng Sinh được cập nhật nhanh và đầy đủ nhất tại TruyenQQ.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="genres-item item item-7">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">UP</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Bạo Lực Vương
+                                </h3>
+                                <p>đang cập nhật</p>
+                            </div>
+                            <p class="content">
+                                Truyện tranh Bạo Lực Vương được cập nhật nhanh và đầy đủ nhất tại TruyenQQ.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="genres-item item item-8">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">UP</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Thanh Kiếm Báo Thù
+                                </h3>
+                                <p>đang cập nhật</p>
+                            </div>
+                            <p class="content">
+                                anh ta nhận được tin rằng em gái của anh ta, Shiyeon, đã tự tử. Trong đám tang, Shiho nhận ra có gì đó không ổn. Không phải tự tử, cô ấy bị giết.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="genres-item item item-9">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">UP</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Brandal
+                                </h3>
+                                <p>đang cập nhật</p>
+                            </div>
+                            <p class="content">Vì người thương bị bậc thầy Silat giết hại, KOLOMENJENG quay trở lại thế giới Silat để tìm ra tên bạo chúa đã đoạt mạng người anh ta thầm mến.
+
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="genres-item item item-10">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">UP</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Đứa Con Báo Thù
+                                </h3>
+                                <p>đang cập nhật</p>
+                            </div>
+                            <p class="content">
+                                Kang Pildu, một công tố viên tâm thần máu lạnh nhận được tin mẹ mình qua đời. Anh phát hiện ra rằng “Tập đoàn Seonhwa” do cha anh và các anh trai lãnh đạo có liên quan đến cái chết của cô. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- detective -->
+                <div class="genres-list"> 
+                    <div class="genres-head item detective">
+                        <h3>Detective</h3>
+                        <p> A story whose plot revolves around the investigation and solving of a crime</p>
+                    </div>
+                    <div class="genres-item item item-11">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">UP</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Phỏng Vấn Sát Nhân
+                                </h3>
+                                <p>đang cập nhật</p>
+                            </div>
+                            <p class="content">
+                                Hajun mồ côi cha mẹ và sống với bà ngoại. Sau khi biết được sự thật về cái chết của cha mẹ mình.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="genres-item item item-12">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">END</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Liar Game
+                                </h3>
+                                <p>đang cập nhật</p>
+                            </div>
+                            <p class="content">
+                                Câu chuyện về Liar Game bắt đầu khi 1 tấm thiệp được gửi đến cho Kanzaki Nao, một cô gái thuộc dạng... ngây thơ cụ. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="genres-item item item-13">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">UP</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Cuồng Thám
+                                </h3>
+                                <p>đang cập nhật</p>
+                            </div>
+                            <p class="content">
+                                Triệu Ngọc cứ tưởng rằng mũi thuốc độc trên chiếc ghế tử hình kia đã chấm dứt sinh mạng của hắn, nào ngờ, mở mắt ra đã thấy mình sống lại trong một hình hài khác ở một thế giới khác.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="genres-item item item-14">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">UP</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Trinh Thám Vlog
+                                </h3>
+                                <p>đang cập nhật</p>
+                            </div>
+                            <p class="content">
+                                Dung Tiểu Cường là nhiếp ảnh gia của một nhóm Vlog chuyên quay các sự kiện kì bí. Nhóm này vô danh và tạo mánh lới quảng cáo thông qua gian lận.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="genres-item item item-15">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">UP</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Trong Bóng Tối
+                                </h3>
+                                <p>đang cập nhật</p>
+                            </div>
+                            <p class="content"> Rốt cục tôi là ai? Cái chết chỉ là một khởi đầu mới. Trở về cảnh cục sau khi kết thúc nhiệm vụ nằm vùng, một kí ức khác trong người Tạ Lam Sơn dần dần thức tỉnh
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- adventure -->
+                <div class="genres-list">
+                    <div class="genres-head item adventure">
+                        <h3>Adventure</h3>
+                        <p>A genre of literary or cinematic work that revolves around adventures, adventurous situations.</p>
+                    </div>
+                    <div class="genres-item item item-16">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">UP</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Quỷ Vương Về Hưu
+                                </h3>
+                                <p>đang cập nhật</p>
+                            </div>
+                            <p class="content">
+                                Khi Quỷ vương bị anh hùng thách thức, nói rằng hắn không biết gì về tình yêu, hắn ta thâm nhập vào học viện anh hùng của loài ngươi.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="genres-item item item-17">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">Up</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Monster Stein
+                                </h3>
+                                <p>đang cập nhật</p>
+                            </div>
+                            <p class="content">Vài thập kỷ trước, loài người đã gây chiến với những sinh vật trong truyền thuyết như người sói và phù thủy, và đang trên bờ vực diệt vong.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="genres-item item item-18">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">UP</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Trảm Nguyệt
+                                </h3>
+                                <p>đang cập nhật</p>
+                            </div>
+                            <p class="content">
+                                Sau khi hóa thành BOSS của thế giới này, ta ẩn mình trong những người chơi để tìm kiếm những bí mật của thế giới.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="genres-item item item-19">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">UP</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Hoạt Hải
+                                </h3>
+                                <p>đang cập nhật</p>
+                            </div>
+                            <p class="content">
+                                Truyện tranh Hoạt Hải được cập nhật nhanh và đầy đủ nhất tại TruyenQQ. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="genres-item item item-20">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">UP</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Nhất Niệm Tiêu Dao
+                                </h3>
+                                <p>đang cập nhật</p>
+                            </div>
+                            <p class="content">
+                                Trần Tiêu bị bệnh sau đó xuyên đến thế giới tu chân.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- comedy -->
+                <div class="genres-list">
+                    <div class="genres-head item comedy">
+                        <h3>Comedy</h3>
+                        <p>Comedy (aka comedy) is a genre of fiction that refers to any discourse or work that is often intended to be humorous or funny.</p>
+                    </div>
+                    <div class="genres-item item item-21">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">UP</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Khi Ngày Đó Đến
+                                </h3>
+                                <p>Omyo
+                                </p>
+                            </div>
+                            <p class="content">
+                                Norang và Paran được cả trường biết như là một cặp đôi hoàn hảo – thực tế thì cả hai đã chia tay nhau.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="genres-item item item-22">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">END</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Maou 2099
+                                </h3>
+                                <p>đang cập nhật</p>
+                            </div>
+                            <p class="content">Năm 2099 tại thành phố Shinjuku, Ma Vương huyền thoại Veltol đã trở lại thành phố tương lai đã phát triển thịnh vượng.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="genres-item item item-23">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">UP</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Người Bạn Cùng Trường
+                                </h3>
+                                <p>đang cập nhật</p>
+                            </div>
+                            <p class="content">
+                                Một câu chuyện đẹp về mối tình đầu ở tuổi thanh xuân. Yoo Han vô tình bị thu hút bởi cô bạn cùng lớp - Geo Ul, một cô gái luôn nghiêm túc trong học tập.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="genres-item item item-24">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">UP</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Oboro Và Machi
+                                </h3>
+                                <p>đang cập nhật</p>
+                            </div>
+                            <p class="content">
+                                Chuyển trường từ tỉnh Miyagi đến cuộc sống nhộn nhịp, xô bồ tại một trường trung học ở Tokyo.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="genres-item item item-25">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">UP</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Ngao Du Tại Chốn Dị Giới
+                                </h3>
+                                <p>đang cập nhật</p>
+                            </div>
+                            <p class="content">
+                                Sora, một cậu bé người Nhật được triệu hồi đến một thế giới khác, đã có được kỹ năng "Đi bộ". 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- sci-fi -->
+                <div class="genres-list">
+                    <div class="genres-head item sci-fic">
+                        <h3>Sci-fic</h3>
+                        <p>A type of writing about imagined developments in science and their effect on life esp.</p>
+                    </div>
+                    <div class="genres-item item item-26">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">UP</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Nhìn Trước Tương Lai
+                                </h3>
+                                <p>đang cập nhật</p>
+                            </div>
+                            <p class="content">Cậu sinh viên nhút nhát Cheon Seon-woo có được khả năng nhìn thấy tương lai. Nếu không thể tránh khỏi số phận thì đành đối mặt với nó!
+
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="genres-item item item-27">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">UP</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Mắc Kẹt Trên Mặt Trăng
+                                </h3>
+                                <p>đang cập nhật</p>
+                            </div>
+                            <p class="content">Sau khi một tiểu hành tinh phá hủy Trái Đất, Moon Yoo vô tình trở thành người cuối cùng còn tồn tại, hoặc ít nhất là anh nghĩ vậy.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="genres-item item item-28">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">UP</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Hội Chứng Thiên Thần
+                                </h3>
+                                <p>đang cập nhật</p>
+                            </div>
+                            <p class="content">
+                                Sinh nhật thứ 12, Angele mắc một căn bệnh kì lạ chết người, khiến cho cơ thể bị bao phủ bởi lông vũ. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="genres-item item item-29">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">UP</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Caterpillar
+                                </h3>
+                                <p>đang cập nhật</p>
+                            </div>
+                            <p class="content">Câu chuyện diễn ra trước những sự kiện trong “Arachnid” khoảng 1 năm. Nhân vật chính là Caterpillar – Sâu Bướm, một sát thủ của Tổ Chức.
+
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="genres-item item item-30">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">UP</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Player
+                                </h3>
+                                <p>dang cập nhật</p>
+                            </div>
+                            <p class="content">
+                                Truyện tranh Player được cập nhật nhanh và đầy đủ nhất tại TruyenQQ
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- romance -->
+                <div class="genres-list">
+                    <div class="genres-head item romance">
+                        <h3>Romance</h3>
+                        <p>A romance is a story of love between two people, often containing exciting events</p>
+                    </div>
+                    <div class="genres-item item item-31">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">UP</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Miki, Tớ Yêu Cậu!
+                                </h3>
+                                <p>Obata Tsunechika
+                                </p>
+                            </div>
+                            <p class="content">
+                                Kousaka là một chàng trai trầm tính, rụt rè, cậu sẽ rất vui nếu bạn bè trong lớp không để tâm đến cậu ấy.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="genres-item item item-32">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">UP</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Có Nhỏ Vợ Cũ Hồi Xuân Trong Lớp Tôi
+                                </h3>
+                                <p>đang cập nhật</p>
+                            </div>
+                            <p class="content">Gặp lại người vợ cũ đã chia tay, để rồi yêu lại một lần nữa.
+
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="genres-item item item-33">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">UP</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Ice Cream Kanojo
+                                </h3>
+                                <p>dang cập nhật</p>
+                            </div>
+                            <p class="content">
+                                “Kanta Date chỉ có một khuyết điểm duy nhất là chiều cao khiêm tốn, ngoài ra anh ấy là một học sinh trung học bình thường như bao người khác.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="genres-item item item-34">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">UP</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Cuộc Hôn Nhân Vụ Lợi Của...hai Otaku?
+                                </h3>
+                                <p>đang cập nhật</p>
+                            </div>
+                            <p class="content">
+                                "Đây chỉ là cuộc hôn nhân vì lợi ích đôi bên thôi, tôi không can dự chuyện của cô, cô liên can gì đến tôi, cứ vậy mà sống là được".
+                            </p>
+                        </div>
+                    </div>
+                    <div class="genres-item item item-35">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">UP</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Con Gái Của Mafia
+                                </h3>
+                                <p>đang cập nhật</p>
+                            </div>
+                            <p class="content">Câu chuyện kể về một chàng trai bình thường tên Mekh, cuộc đời sắp thay đổi vào thời điểm anh vô tình đụng phải cô gái khét tiếng và dễ bị hiểu lầm tên Saran.
+
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- isekai -->
+                <div class="genres-list">
+                    <div class="genres-head item isekai">
+                        <h3>Isekai</h3>
+                        <p>Isekai is a fantasy or fiction subgenre, whose main content is a character who is transported to another world (similar to the transatlantic genre).</p>
+                    </div>
+                    <div class="genres-item item item-36">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">UP</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Kẻ Nuốt Chửng Ánh Sáng
+                                </h3>
+                                <p>đang cập nhật</p>
+                            </div>
+                            <p class="content">Để trả thù những kẻ đã phản bội mình, ta quyết tâm trở thành sứ giả của Chúa.
+
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="genres-item item item-37">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">UP</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Isekai Samurai
+                                    </h3>
+                                <p>Saitou Keigo
+                                </p>
+                            </div>
+                            <p class="content">
+                                Kiếm sĩ mạnh nhất thời Chiến Quốc, được chuyển đến một thế giới khác
+                            </p>
+                        </div>
+                    </div>
+                    <div class="genres-item item item-38">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">UP</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Trùng Sinh Trở Lại 1983 Làm Phú Hào
+                                </h3>
+                                <p>đang cập nhật</p>
+                            </div>
+                            <p class="content">
+                                Đưa ra thị trường tổng giám đốc tuần tại phong ngoài ý muốn trùng sinh đến năm 1983.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="genres-item item item-39">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">UP</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Chuyển Sinh Thành Lợn Ở Thế Giới Khác
+                                </h3>
+                                <p>Takuma Sakai
+                                </p>
+                            </div>
+                            <p class="content">Một thanh niên chết vì ăn gan lợn sống và chuyển sinh thành lợn ở thế giới khác
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="genres-item item item-40">
+                        <div class="section-head">
+                            <p>12.1M</p>
+                            <p class="scan">UP</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="content-head">
+                                <h3>Kiếp Thứ Hai Đầy Rắc Rối
+                                </h3>
+                                <p>đang cập nhật</p>
+                            </div>
+                            <p class="content">
+                                Kozue, một người phụ nữ đã lãng phí cả cuộc đời mình cho những kẻ tồi tệ, cô tái sinh sang một thế giới khác với thân phận là Công chúa Christa.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-app">
+                <h2>Download WebToon now!</h2>
+                <div class="app-flex">
+                    <img src="./images/gg-play.png" alt="google-play">
+                    <img src="./images/appstore.png" alt="app-store">
+                </div>
+            </div>
+            <div class="footer-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                    <path fill="#FFF"
+                        d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20">
+                    <path fill="#FFF"
+                        d="M10.333 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.976 1.409 4.1 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.058 4.042-.124 2.687-1.386 3.975-4.099 4.099-1.055.048-1.37.058-4.042.058-2.67 0-2.986-.01-4.04-.058-2.717-.124-3.976-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058zm0-1.802C7.618 0 7.278.012 6.211.06 2.579.227.56 2.242.394 5.877.345 6.944.334 7.284.334 10s.011 3.057.06 4.123c.166 3.632 2.181 5.65 5.816 5.817 1.068.048 1.408.06 4.123.06 2.716 0 3.057-.012 4.124-.06 3.628-.167 5.651-2.182 5.816-5.817.049-1.066.06-1.407.06-4.123s-.011-3.056-.06-4.122C20.11 2.249 18.093.228 14.458.06 13.39.01 13.049 0 10.333 0zm0 4.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm5.339-9.87a1.2 1.2 0 10-.001 2.4 1.2 1.2 0 000-2.4z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                    <path fill="#FFF"
+                        d="M10 0C4.478 0 0 4.477 0 10c0 4.237 2.636 7.855 6.356 9.312-.088-.791-.167-2.005.035-2.868.182-.78 1.172-4.97 1.172-4.97s-.299-.6-.299-1.486c0-1.39.806-2.428 1.81-2.428.852 0 1.264.64 1.264 1.408 0 .858-.545 2.14-.828 3.33-.236.995.5 1.807 1.48 1.807 1.778 0 3.144-1.874 3.144-4.58 0-2.393-1.72-4.068-4.177-4.068-2.845 0-4.515 2.135-4.515 4.34 0 .859.331 1.781.745 2.281a.3.3 0 01.069.288l-.278 1.133c-.044.183-.145.223-.335.134-1.249-.581-2.03-2.407-2.03-3.874 0-3.154 2.292-6.052 6.608-6.052 3.469 0 6.165 2.473 6.165 5.776 0 3.447-2.173 6.22-5.19 6.22-1.013 0-1.965-.525-2.291-1.148l-.623 2.378c-.226.869-.835 1.958-1.244 2.621.937.29 1.931.446 2.962.446 5.522 0 10-4.477 10-10S15.522 0 10 0z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18">
+                    <path fill="#FFF"
+                        d="M20.667 2.797a8.192 8.192 0 01-2.357.646 4.11 4.11 0 001.804-2.27 8.22 8.22 0 01-2.606.996A4.096 4.096 0 0014.513.873c-2.649 0-4.595 2.472-3.997 5.038a11.648 11.648 0 01-8.457-4.287 4.109 4.109 0 001.27 5.478A4.086 4.086 0 011.47 6.59c-.045 1.901 1.317 3.68 3.29 4.075a4.113 4.113 0 01-1.853.07 4.106 4.106 0 003.834 2.85 8.25 8.25 0 01-6.075 1.7 11.616 11.616 0 006.29 1.843c7.618 0 11.922-6.434 11.662-12.205a8.354 8.354 0 002.048-2.124z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20">
+                    <path fill="#FFF"
+                        d="M10.333 0c-5.522 0-10 4.478-10 10 0 5.523 4.478 10 10 10 5.523 0 10-4.477 10-10 0-5.522-4.477-10-10-10zm3.701 14.077c-1.752.12-5.653.12-7.402 0C4.735 13.947 4.514 13.018 4.5 10c.014-3.024.237-3.947 2.132-4.077 1.749-.12 5.651-.12 7.402 0 1.898.13 2.118 1.059 2.133 4.077-.015 3.024-.238 3.947-2.133 4.077zM8.667 8.048l4.097 1.949-4.097 1.955V8.048z" />
+                </svg>
+            </div>
+            <ul class="footer-list">
+                <li>Terms of Use</li>
+                <li>Feedback</li>
+                <li>Help</li>
+                <li>Terms</li>
+                <li>Privacy</li>
+                <li>Contact</li>
+            </ul>
+        </footer>
+   </section> 
+</body>
+</html>

@@ -1,0 +1,822 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --primary-color: #00dc64;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+}
+ul li{
+    list-style: none;
+
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+.desktop{
+    min-width: 1400px
+}
+
+.header-menu{
+    padding: 10px 48px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header-menu__left{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.header-logo img{
+    width: 70px;
+}
+
+.header-list{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-list li{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.header-menu__right{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.form-inline {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-control {
+    width: 100%;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid #ced4da;
+    padding: 0.5rem 1rem;
+}
+
+.btn-outline-success {
+    border-radius: 0 20px 20px 0;
+    border: 1px solid #28a745;
+    color: #28a745;
+    padding: 0.5rem 1rem;
+}
+
+.btn-outline-success:hover {
+    background-color: #28a745;
+    color: white;
+}
+
+.header-login{
+    padding: 12px 24px;
+    border-radius: 22px;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+.banner{
+    width: 100%;
+    background: url(./images/bg.jpg) no-repeat center center/cover;
+    height: 492px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-section{
+    position: relative;
+    width: 25%;
+}
+
+.banner-sec-1{
+    position: absolute;
+    bottom: 0;
+    left: -40px;
+}
+
+.banner-sec-2{
+    position: absolute;
+    top: -15px;
+    left: -8px;
+}
+
+.main-content{
+    width: 1125px;
+    margin: 0 auto;
+}
+
+.week{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.week-list{
+    display: flex;
+    align-items: center;
+}
+
+.week-list li{
+    padding: 18px 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.week-active{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.top{
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    margin-top: 40px;
+    gap: 20px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #d4d4d4;
+}
+.sto{
+    padding:0;
+    margin:0;
+    padding-left:0;
+}
+.section-content{
+    display: none;
+}
+.hot-item.item-1{
+    background: url(./images/nguyenton.jpg) no-repeat center center/cover;
+    height: 247px;
+    width: 190px;
+}
+.top-item.item-1{
+    background: url(./images/nguyenton.jpg) no-repeat center center/cover;
+}
+
+.top-item.item-2 {
+    background: url(./images/yeu-than-ky.jpg) no-repeat center center/cover;
+}
+
+.top-item.item-3 {
+    background: url(./images/nen-van-minh-nebula.jpg) no-repeat center center/cover;
+}
+
+.top-item.item-4 {
+    background: url(./images/toi-mong-giua-ban-ngay.jpg) no-repeat center center/cover;
+}
+
+.top-item.item-5 {
+    background: url(./images/tong-tai-ty-phu-chi-sung-co-vo-the-than.jpg) no-repeat center center/cover;
+}
+
+.top-item.item-6 {
+    background: url(./images/tro-thanh-con-gai-nha-tai-phiet.jpg) no-repeat center center/cover;
+}
+
+.top-item.item-7 {
+    background: url(./images/tro-thanh-con-gai-nha-tai-phiet.jpg) no-repeat center center/cover;
+}
+
+.top-item.item-8 {
+    background: url(./images/huyen-thoai-tai-xuat.jpg) no-repeat center center/cover;
+}
+
+.top-item.item-9 {
+    background: url(./images/tan-tinh-tai-the.jpg) no-repeat center center/cover;
+}
+.top-item.item-10 {
+    background: url(./images/cong-tuoc-bach-long.jpg) no-repeat center center/cover;
+}
+.top-item.item-11 {
+    background: url(./images/toan-tri-doc-gia.jpg) no-repeat center center/cover;
+}
+.top-item.item-12 {
+    background: url(./images/tinh-tu-kiem-si.jpg) no-repeat center center/cover;
+}
+.top-item.item-13 {
+    background: url(./images/dai-phap-su-toan-nang.jpg) no-repeat center center/cover;
+}
+.top-item.item-14 {
+    background: url(./images/thien-phong-phach-dao.jpg) no-repeat center center/cover;
+}
+.top-item.item-15 {
+    background: url(./images/lilien-cua-turin_1640080193.jpg) no-repeat center center/cover;
+}
+.top-item.item-16 {
+    background: url(./images/only-sense-online_1531739696.jpg) no-repeat center center/cover;
+}
+.top-item.item-17 {
+    background: url(./images/undead-unluck_1579249473.jpg) no-repeat center center/cover;
+}
+.top-item.item-18 {
+    background: url(./images/cang-danh-cang-manh_1672201843.jpg) no-repeat center center/cover;
+}
+.top-item.item-19 {
+    background: url(./images/dont-cry-maou-chan.jpg) no-repeat center center/cover;
+}
+.top-item.item-20 {
+    background: url(./images/hoang-tu-ban-thuoc.jpg) no-repeat center center/cover;
+}
+
+.top-item.item-21 {
+    background: url(./images/pha-cong-kiem-de.jpg) no-repeat center center/cover;
+}
+.top-item.item-22 {
+    background: url(./images/gay-go-cap-99.jpg) no-repeat center center/cover;
+}
+.top-item.item-23 {
+    background: url(./images/nhat-hot-dao.jpg) no-repeat center center/cover;
+}
+.top-item.item-24 {
+    background: url(./images/cung-quy-kiem-than.jpg) no-repeat center center/cover;
+}
+.top-item.item-25 {
+    background: url(./images/van-co-toi-cuong-tong.jpg) no-repeat center center/cover;
+}
+.top-item.item-26 {
+    background: url(./images/co-y-chiem-doat.jpg) no-repeat center center/cover;
+}
+.top-item.item-27 {
+    background: url(./images/gal-to-bocchi.jpg) no-repeat center center/cover;
+}
+.top-item.item-28 {
+    background: url(./images/toi-cung-la-dai-lao.jpg) no-repeat center center/cover;
+}
+.top-item.item-29 {
+    background: url(./images/fool-night.jpg) no-repeat center center/cover;
+}
+.top-item.item-30 {
+    background: url(./images/sket-dance.jpg) no-repeat center center/cover;
+}
+
+.top-item.item-31 {
+    background: url(./images/ta-co-mot-son-trai.jpg) no-repeat center center/cover;
+}
+.top-item.item-32 {
+    background: url(./images/tuyet-the-vo-than_1479101756.jpg) no-repeat center center/cover;
+}
+.top-item.item-33 {
+    background: url(./images/bach-luyen-thanh-than_1444715692.jpg) no-repeat center center/cover;
+}
+.top-item.item-34 {
+    background: url(./images/tenrou-no-avalon_1702562436.jpg) no-repeat center center/cover;
+}
+.top-item.item-35 {
+    background: url(./images/dinh-uc-da-chi-ca.jpg) no-repeat center center/cover;
+}
+.top-item.item-36 {
+    background: url(./images/nhat-ky-trong-tre_1703691861.jpg) no-repeat center center/cover;
+}
+.top-item.item-37 {
+    background: url(./images/karakai-jouzu-no-moto-takagi-san_1520167954.jpg) no-repeat center center/cover;
+}
+.top-item.item-38 {
+    background: url(./images/nguoi-thay-ma_1660825552.jpg) no-repeat center center/cover;
+}
+.top-item.item-39 {
+    background: url(./images/shinju-no-nectar_1481866476.jpg) no-repeat center center/cover;
+}
+.top-item.item-40 {
+    background: url(./images/otoyomegatari_1443241264.jpg) no-repeat center center/cover;
+}
+
+.top-item.item-41 {
+    background: url(./images/congnuongsu.jpg) no-repeat center center/cover;
+}
+.top-item.item-42 {
+    background: url(./images/sat-thu-ve-vuon_1606467892.jpg) no-repeat center center/cover;
+}
+.top-item.item-43 {
+    background: url(./images/madame-petit_1525487967.jpg) no-repeat center center/cover;
+}
+.top-item.item-44 {
+    background: url(./images/bo-toi-la-dac-vu_1637028911.jpg) no-repeat center center/cover;
+}
+.top-item.item-45 {
+    background: url(./images/de-vuong-hoi-quy_1711987277.jpg) no-repeat center center/cover;
+}
+.top-item.item-46 {
+    background: url(./images/quai-luc-loan-than_1709610757.jpg) no-repeat center center/cover;
+}
+.top-item.item-47 {
+    background: url(./images/vi-linh-kiem-tien_1685623777.jpg) no-repeat center center/cover;
+}
+.top-item.item-48 {
+    background: url(./images/ke-bat-bai_1667657472.jpg) no-repeat center center/cover;
+}
+.top-item.item-49 {
+    background: url(./images/hoi-quy-gia-ve-huu_1694245850.jpg) no-repeat center center/cover;
+}
+.top-item.item-50 {
+    background: url(./images/chuyen-sinh-thanh-tieu-su_1659150430.jpg) no-repeat center center/cover;
+}
+
+.top-item.item-51 {
+    background: url(./images/toi-manh-hon-anh-hung_1692843746.jpg) no-repeat center center/cover;
+}
+.top-item.item-52 {
+    background: url(./images/kiem-thanh-trong-sinh_1716741418.jpg) no-repeat center center/cover;
+}
+.top-item.item-53 {
+    background: url(./images/thuc-long-ma-phap-su_1691813624.jpg) no-repeat center center/cover;
+}
+.top-item.item-54 {
+    background: url(./images/bao-luc-vuong_1716218629.jpg) no-repeat center center/cover;
+}
+.top-item.item-55 {
+    background: url(./images/cam-kiem-tuyet-doi-min_1655733915.jpg) no-repeat center center/cover;
+}
+.top-item.item-56 {
+    background: url(./images/su-quyen-ru-cua-2-5d_1568255242.jpg) no-repeat center center/cover;
+}
+.top-item.item-57 {
+    background: url(./images/isshou-senkin_1715665867.jpg) no-repeat center center/cover;
+}
+.top-item.item-58 {
+    background: url(./images/shinsou-no-raputa_1717739873.jpg) no-repeat center center/cover;
+}
+.top-item.item-59 {
+    background: url(./images/xa-dao-nhan_1696128284.jpg) no-repeat center center/cover;
+}
+.top-item.item-60 {
+    background: url(./images/cong-tu-biet-tu_1692414479.jpg) no-repeat center center/cover;
+}
+
+.item{
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+    width: 210px;
+    height: 210px;
+}
+
+.item:hover .section-content{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f87171;
+    padding: 0 20px;
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+
+}
+
+.section-head{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.section-head h3{
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.section-head p {
+    font-size: 14px;
+}
+
+.scan{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hot-item .scan{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 12px;
+    color: #fff;
+    background-color: var(--primary-color);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top-item .scan{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 12px;
+    color: #fff;
+    background-color: var(--primary-color);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-head h3{
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.content-head p {
+    font-size: 14px;
+}
+
+.content{
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #fff;
+    font-size: 10px;
+}
+
+.new{
+    margin-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.headline{
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 14px;
+    text-align: center;
+}
+
+.new-list{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.new-item.item-1{
+    background: url(./images/new-01.jpg) no-repeat center center/cover;
+}
+
+.new-item.item-2 {
+    background: url(./images/new-02.jpg) no-repeat center center/cover;
+}
+
+.new-item.item-3 {
+    background: url(./images/new-03.jpg) no-repeat center center/cover;
+}
+
+.new-item.item-4 {
+    background: url(./images/new-04.jpg) no-repeat center center/cover;
+    width: 100%;
+    flex: 2;
+    color: #fff;
+}
+
+.new-item .scan{
+    background-color: #000;
+    color: var(--primary-color);
+    font-size: 10px;
+}
+
+.genres{
+    margin-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #d4d4d4;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.genres-list{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.genres-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    align-items: baseline;
+}
+
+.horror,.action,.adventure,.detective,.comedy,.romance,.sci-fic,.isekai{
+    background-color: #f97316;
+}
+
+.genres-item.item-1{
+    background: url(./images/makechuyen2.jpg) no-repeat center center/cover;
+}
+
+.genres-item.item-2 {
+    background: url(./images/caramal-ky-quai_1715743451.jpg) no-repeat center center/cover;
+}
+
+
+.genres-item.item-3 {
+    background: url(./images/killy-valentino_1716570843.png) no-repeat center center/cover;
+}
+
+.genres-item.item-4 {
+    background: url(./images/thuc-quy_1712982344.jpg) no-repeat center center/cover;
+}
+.genres-item.item-5 {
+    background: url(./images/la-phieu-tu-hinh_1705376900.jpg) no-repeat center center/cover;
+}
+
+.genres-item.item-6 {
+    background: url(./images/kiem-thanh-trong-sinh_1716741418.jpg) no-repeat center center/cover;
+}
+
+.genres-item.item-7 {
+    background: url(./images/bao-luc-vuong_1716218629.jpg) no-repeat center center/cover;
+}
+
+
+.genres-item.item-8 {
+    background: url(./images/thanhkiembaothu.jpg) no-repeat center center/cover;
+}
+
+
+.genres-item.item-9 {
+    background: url(./images/brandal_1714838118.jpg) no-repeat center center/cover;
+}
+.genres-item.item-10 {
+    background: url(./images/dua-con-bao-thu_1713454474.jpg) no-repeat center center/cover;
+}
+.genres-item.item-11 {
+    background: url(./images/phong-van-sat-nhan_1704165824.jpg) no-repeat center center/cover;
+}
+.genres-item.item-12{
+    background: url(./images/liar-game_1684979313.jpg) no-repeat center center/cover;
+}
+
+.genres-item.item-13 {
+    background: url(./images/cuong-tham_1667030456.jpg) no-repeat center center/cover;
+}
+
+
+.genres-item.item-14 {
+    background: url(./images/trinh-tham-vlog_1669444596.jpg) no-repeat center center/cover;
+}
+
+.genres-item.item-15 {
+    background: url(./images/trong-bong-toi_1601215664.jpg) no-repeat center center/cover;
+}
+
+
+.genres-item.item-16 {
+    background: url(./images/quy-vuong-ve-huu_1713883674.jpg) no-repeat center center/cover;
+}
+
+.genres-item.item-17 {
+    background: url(./images/monster-stein_1712818697.jpg) no-repeat center center/cover;
+}
+
+
+.genres-item.item-18 {
+    background: url(./images/tram-nguyet_1708404583.jpg) no-repeat center center/cover;
+}
+
+
+.genres-item.item-19 {
+    background: url(./images/hoat-hai_1707799028.jpg) no-repeat center center/cover;
+}
+.genres-item.item-20 {
+    background: url(./images/nhat-niem-tieu-dao_1704594294.jpg) no-repeat center center/cover;
+}
+.genres-item.item-21 {
+    background: url(./images/khi-ngay-do-den_1716646403.jpg) no-repeat center center/cover;
+}
+.genres-item.item-22{
+    background: url(./images/maou2099.jpg) no-repeat center center/cover;
+}
+
+.genres-item.item-23 {
+    background: url(./images/nguoi-ban-cung-truong_1716392625.jpg) no-repeat center center/cover;
+}
+
+
+.genres-item.item-24 {
+    background: url(./images/oboro-va-machi_1714840547.jpg) no-repeat center center/cover;
+}
+
+.genres-item.item-25 {
+    background: url(./images/ngao-du-tai-chon-di-gioi_1714840156.jpg) no-repeat center center/cover;
+}
+
+
+.genres-item.item-26 {
+    background: url(./images/nhin-truoc-tuong-lai_1704082875.jpg) no-repeat center center/cover;
+}
+
+.genres-item.item-27 {
+    background: url(./images/mac-ket-tren-mat-trang_1598714164.jpg) no-repeat center center/cover;
+}
+
+
+.genres-item.item-28 {
+    background: url(./images/hoi-chung-thien-than_1598059747.jpg) no-repeat center center/cover;
+}
+
+
+.genres-item.item-29 {
+    background: url(./images/caterpillar_1597296569.jpg) no-repeat center center/cover;
+}
+.genres-item.item-30 {
+    background: url(./images/player_1683548327.jpg) no-repeat center center/cover;
+}
+.genres-item.item-31 {
+    background: url(./images/miki-to-yeu-cau-♥_1716464891.jpg) no-repeat center center/cover;
+}
+.genres-item.item-32{
+    background: url(./images/co-nho-vo-cu-hoi-xuan-trong-lop-toi_1715183853.jpg) no-repeat center center/cover;
+}
+
+.genres-item.item-33 {
+    background: url(./images/ice-cream-kanojo_1700970478.jpg) no-repeat center center/cover;
+}
+
+
+.genres-item.item-34 {
+    background: url(./images/cuoc-hon-nhan-vu-loi-cua-hai-otaku_1700970163.jpg) no-repeat center center/cover;
+}
+
+.genres-item.item-35 {
+    background: url(./images/con-gai-cua-mafia_1699077952.jpg) no-repeat center center/cover;
+}
+
+
+.genres-item.item-36 {
+    background: url(./images/ke-nuot-chung-anh-sang_1694485274.jpg) no-repeat center center/cover;
+}
+
+.genres-item.item-37 {
+    background: url(./images/isekai-samurai_1693132820.jpg) no-repeat center center/cover;
+}
+
+
+.genres-item.item-38 {
+    background: url(./images/trung-sinh-tro-lai-1983-lam-phu-hao_1672458258.jpg) no-repeat center center/cover;
+}
+
+
+.genres-item.item-39 {
+    background: url(./images/chuyen-sinh-thanh-lon-o-the-gioi-khac_1654128410.jpg) no-repeat center center/cover;
+}
+.genres-item.item-40 {
+    background: url(./images/kiep-thu-hai-day-rac-roi_1699077633.png) no-repeat center center/cover;
+}
+
+
+
+.genres-item .scan{
+    font-size: 10px;
+    background-color:#f3f4f6;
+    color: var(--primary-color);
+}
+
+.trending{
+    margin-top: 40px;
+padding-bottom: 40px;
+   background-color: #fff;
+}
+
+.trending-contain{
+    width: 1125px;
+    margin: 0 auto;
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.trending-list{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.trending-list-item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 8px 0;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.trending-content{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.number{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.trending-content__txt{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.trending-auth{
+    font-size: 12px;
+    color: #a3a3a3;
+}
+
+.footer{
+    padding-top: 80px;
+    padding-bottom: 30px;
+    width: 100%;
+    background-color: #f3f4f6;
+}
+
+.footer-app{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-flex{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.app-flex img{
+    width: 150px;
+}
+
+.app-flex  img:last-child{
+    width: 150px;
+    height: 40px;
+}
+
+.footer-icon{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer-icon path{
+    fill: #000
+}
+
+.footer-list{
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+@media (max-width: 768px){
+    .desktop{
+       display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+    
+}
